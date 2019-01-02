@@ -3,10 +3,14 @@
   <% data.posts.forEach(function(post) { %>
     <% if(!post.draft) { %>
       <article class="post">
+        <% if(post.image) { %>
+        <div class="post-image">
+          <img src="<%= post.image %>" alt="">
+        </div>
+        <% } %>
         <h1 class="post-title">
           <a href="<%= post.permalink %>"><%= post.title %></a>
         </h1>
-        <time class="post-date">5/28/2015</time>
         <div class="post-content">
           <% if(post.excerpt) { %>
             <p><%= post.excerpt %></p>

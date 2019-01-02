@@ -1,0 +1,122 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+
+  /* Colors */
+  --body: #f8f8f8;
+  --bg: #121314;
+  --primary: #74aae0;
+  --secondary: #d85f9a;
+  --text-1: rgba(0,0,0,0.8);
+  --text-2: rgba(0,0,0,0.5);
+  --text-3: rgba(0,0,0,0.3);
+  --text-light: rgba(255,255,255,0.8);
+
+  /* Other stuff */
+  --font: 'Segoe UI', sans-serif;
+  --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  --shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  --shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/* Global styles */
+body {
+  background-color: var(--body);
+  font-family: var(--font);
+}
+
+img {
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+.container {
+  width: calc(100% - 1rem);
+  max-width:960px;
+  margin:0 auto;
+}
+
+.text-container {
+  max-width:600px;
+}
+
+/* nav */
+nav {
+  background-color: var(--bg);
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:99999;
+}
+
+/* Navbar height */
+body {
+  padding-top: 50px; 
+}
+
+nav .logo {
+  display:inherit;
+  padding:0;
+  margin:0;
+}
+
+nav .logo img {
+  max-width: none;
+}
+
+nav .container {
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display:flex;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+nav ul li:last-child a{
+  padding-right: 0;
+}
+
+nav ul li a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--text-light);
+  text-decoration:none;
+  font-size:0.9rem;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--bg);
+  color: var(--text-light);
+  width:100%;
+  text-align:center;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight:100;
+  border:none;
+  padding:0;
+  margin:0;
+}
+
+/* Content */
+
+
